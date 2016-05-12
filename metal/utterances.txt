@@ -1,7 +1,7 @@
-ComodityPrice	 {gold|Commodity} 
-ComodityPrice	what is the price of  {gold|Commodity} 
-ComodityPrice	what's the price of  {gold|Commodity} 
-ComodityPrice	give me the price of  {gold|Commodity} 
-ComodityPrice	the price of  {gold|Commodity} 
-ComodityPrice	tell me the price of  {gold|Commodity} 
-ComodityPrice	find me the price of  {gold|Commodity} 
+CommodityPrice	 {gold|Commodity} 
+CommodityPrice	what is the price of  {gold|Commodity} 
+CommodityPrice	what's the price of  {gold|Commodity} 
+CommodityPrice	give me the price of  {gold|Commodity} 
+CommodityPrice	the price of  {gold|Commodity} 
+CommodityPrice	tell me the price of  {gold|Commodity} 
+CommodityPrice	find me the price of  {gold|Commodity} 
