@@ -1,0 +1,5 @@
+OperationStatus	what is the status
+OperationStatus	what's the status
+OperationStatus	give me the status
+OperationStatus	tell me the status
+OperationStatus	find me the status
