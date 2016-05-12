@@ -109,7 +109,7 @@ def get_price(intent, session):
                     date_str = 'As of {} today, '.format(d.time().strftime('%I:%M %p'))
                 else:
                     date_str = 'As of {} on {}, '.format(d.time().strftime('%I:%M %p'), d.date().strftime('%B %d'))
-                speech_output = "{} the price of {} is {}.".format(date_str, commodity, data[commodity])
+                speech_output = "{} the price of {} is ${}.".format(date_str, commodity, data[commodity])
         except urllib2.HTTPError:
             speech_output = "I'm sorry, there was an error retrieving the price. Try again later."
     else:
