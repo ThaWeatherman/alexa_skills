@@ -1,7 +1,7 @@
-TSAWaitTime	 {BWI|Airport} 
-TSAWaitTime	what is the wait time for  {BWI|Airport} 
-TSAWaitTime	what's the wait time for  {BWI|Airport} 
-TSAWaitTime	give me the wait time for  {BWI|Airport} 
-TSAWaitTime	the wait time for  {BWI|Airport} 
-TSAWaitTime	tell me the wait time for  {BWI|Airport} 
-TSAWaitTime	find me the wait time for  {BWI|Airport} 
+TSAWaitTime	 {Airport} 
+TSAWaitTime	what is the wait time for  {Airport} 
+TSAWaitTime	what's the wait time for  {Airport} 
+TSAWaitTime	give me the wait time for  {Airport} 
+TSAWaitTime	the wait time for  {Airport} 
+TSAWaitTime	tell me the wait time for  {Airport} 
+TSAWaitTime	find me the wait time for  {Airport} 
