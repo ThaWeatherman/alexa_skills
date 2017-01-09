@@ -55,5 +55,5 @@ def get_significant_digits():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=4344)
 

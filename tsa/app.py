@@ -33,5 +33,5 @@ def wait_time(airport, mapping={'airport': 'Airport'}):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=4346)
 
