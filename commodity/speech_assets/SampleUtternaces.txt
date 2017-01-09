@@ -1,0 +1,6 @@
+CommodityPrice	what is the price of  {Commodity} 
+CommodityPrice	what's the price of  {Commodity} 
+CommodityPrice	give me the price of  {Commodity} 
+CommodityPrice	the price of  {Commodity} 
+CommodityPrice	tell me the price of  {Commodity} 
+CommodityPrice	find me the price of  {Commodity} 
