@@ -17,7 +17,7 @@
       "slots": [
         {
           "name": "Commodity",
-          "type": "AMAZON.LITERAL"
+          "type": "LIST_OF_COMMODITIES"
         }
       ]
     }
