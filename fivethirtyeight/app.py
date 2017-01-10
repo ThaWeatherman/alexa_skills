@@ -41,7 +41,7 @@ def get_significant_digits():
     soup = BeautifulSoup(r.content, 'html.parser')
     posts = soup.select('div.post-info')
     most_recent = posts[0]
-    d = datetime.strptime(most_recent.span.text, '%B %d, %Y')
+    d = datetime.strptime(most_recent.span.text, '%b %d, %Y')
     link = most_recent.h2.a.attrs['href']
     digits_text = build_digits_content(link)
     speech_output = ''
