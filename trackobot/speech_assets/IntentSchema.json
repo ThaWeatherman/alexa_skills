@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "Stats",
+      "slots": [
+        {
+          "name": "asdeck",
+          "type": "DECK"
+        },
+        {
+          "name": "ashero",
+          "type": "HERO"
+        },
+        {
+          "name": "vsdeck",
+          "type": "DECK"
+        },
+        {
+          "name": "vshero",
+          "type": "HERO"
+        }
+      ]
+    }
+  ]
+}

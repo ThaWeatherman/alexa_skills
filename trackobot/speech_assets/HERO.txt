@@ -1,0 +1,9 @@
+paladin
+rogue
+warlock
+shaman
+warrior
+hunter
+mage
+priest
+druid

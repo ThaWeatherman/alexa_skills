@@ -1,0 +1,34 @@
+Stats	give me stats on {asdeck} {ashero}
+Stats	give me stats on {ashero}
+Stats	give my stats against {vshero}
+Stats	give my stats as {ashero} against {vshero}
+Stats	give stats versus {vsdeck} {vshero}
+Stats	say my stats against {vsdeck} {vshero}
+Stats	say my stats as {ashero} versus {vshero}
+Stats	say my stats for {asdeck} {ashero}
+Stats	say my stats for {ashero}
+Stats	say stats against {vsdeck} {vshero}
+Stats	say stats versus {vshero}
+Stats	stats {ashero}
+Stats	stats {ashero} against {vshero}
+Stats	stats {ashero} versus {vshero}
+Stats	tell me my stats for {asdeck} {ashero}
+Stats	tell me my stats for {ashero}
+Stats	tell my stats as {asdeck} {ashero} versus {vsdeck} {vshero}
+Stats	tell stats versus {vsdeck} {vshero}
+Stats	tell stats versus {vshero}
+Stats	what are my stats against {vsdeck} {vshero}
+Stats	what are my stats against {vshero}
+Stats	what are my stats as {asdeck} {ashero}
+Stats	what are my stats as {asdeck} {ashero} against {vsdeck} {vshero}
+Stats	what are my stats as {asdeck} {ashero} versus {vsdeck} {vshero}
+Stats	what are my stats as {ashero}
+Stats	what are my stats as {ashero} against {vshero}
+Stats	what are my stats as {ashero} versus {vshero}
+Stats   what are my stats
+Stats   tell my stats
+Stats   say my stats
+Stats   stats
+Stats   give me my stats
+Stats   give my stats
+Stats   tell me my stats
