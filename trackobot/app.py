@@ -8,6 +8,14 @@ app = Flask(__name__)
 app.config.from_pyfile('config.py')
 ask = Ask(app, '/')
 t = trackopy.Trackobot(app.config['USERNAME'], app.config['PASSWORD'])
+decks = t.decks()  # TODO wat do if decks list is updated?
+
+
+def _find_deck_id(hero, deck_name):
+    for deck in decks['decks']:
+        if deck['name'].lower() == deck_name.lower() and deck['hero'].lower() == hero.lower():
+            return deck['id']
+    return 0  # passing 0 for a deck id is fine. trackobot just ignores it
 
 
 @ask.intent('Stats')
@@ -30,6 +38,23 @@ def status(ashero, asdeck, vshero, vsdeck):
             resp = 'For the current month, you have played {} games against {}, with {} wins and {} losses'.format(total, vshero, wins, losses)
         else:
             resp = 'For the current month, you have played {} games as {} against {}, with {} wins and {} losses'.format(total, ashero, vshero, wins, losses)
+    elif (ashero is not None and asdeck is not None) or (vshero is not None and vsdeck is not None):
+        if ashero is not None:
+            as_deck = _find_deck_id(ashero, asdeck)
+        if vshero is not None:
+            vs_deck = _find_deck_id(vshero, vsdeck)
+        stats = t.stats(stats_type='decks', time_range='current_month', as_deck=as_deck, vs_deck=vs_deck)
+        total = stats['stats']['overall']['total']
+        wins = stats['stats']['overall']['wins']
+        losses = stats['stats']['overall']['losses']
+        if ashero is not None and vshero is None:
+            resp = 'For the current month, you have played {} games as {} {}, with {} wins and {} losses'.format(total, asdeck, ashero, wins, losses)
+        elif vshero is not None and ashero is None:
+            resp = 'For the current month, you have played {} games against {} {}, with {} wins and {} losses'.format(total, vsdeck, vshero, wins, losses)
+        else:
+            resp = 'For the current month, you have played {} games as {} {} against {} {}, with {} wins and {} losses'.format(total, asdeck, ashero, vsdeck, vshero, wins, losses)
+    else:
+        resp = 'Bad input. I received {} for as hero, {} for as deck, {} for vs hero, and {} for vs deck'.format(ashero, asdeck, vshero, vsdeck)
     return statement(resp).simple_card('Trackobot', resp)
 
 
