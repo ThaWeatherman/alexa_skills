@@ -1,0 +1,5 @@
+msg: 'For the current month, you have played {{total}} games, with {{win}} wins and {{loss}} losses'
+as_msg: 'For the current month, you have played {{total}} games as {{ashero}}, with {{win}} wins and {{loss}} losses'
+against_msg: 'For the current month, you have played {{total}} games against {{vshero}}, with {{win}} wins and {{loss}} losses'
+as_against_msg: 'For the current month, you have played {{total}} games as {{ashero}} against {{vshero}}, with {{win}} wins and {{loss}} losses'
+error_msg: 'Bad input. I received {{ashero}} for as hero, {{asdeck}} for as deck, {{vshero}} for vs hero, and {{vsdeck}} for vs deck'

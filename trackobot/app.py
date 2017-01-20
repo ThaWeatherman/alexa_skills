@@ -26,18 +26,18 @@ def status(ashero, asdeck, vshero, vsdeck):
         total = stats['stats']['overall']['total']
         wins = stats['stats']['overall']['wins']
         losses = stats['stats']['overall']['losses']
-        resp = 'For the current month, you have played {} games, with {} wins and {} losses'.format(total, wins, losses)
+        resp = render_template('msg', total=total, win=wins, loss=losses)
     elif (ashero is not None or vshero is not None) and asdeck is None and vsdeck is None:
         stats = t.stats(stats_type='classes', time_range='current_month', as_hero=ashero, vs_hero=vshero)
         total = stats['stats']['overall']['total']
         wins = stats['stats']['overall']['wins']
         losses = stats['stats']['overall']['losses']
         if ashero is not None and vshero is None:
-            resp = 'For the current month, you have played {} games as {}, with {} wins and {} losses'.format(total, ashero, wins, losses)
+            resp = render_template('as_msg', total=total, ashero=ashero, win=wins, loss=losses)
         elif ashero is None and vshero is not None:
-            resp = 'For the current month, you have played {} games against {}, with {} wins and {} losses'.format(total, vshero, wins, losses)
+            resp = render_template('against_msg', total=total, vshero=vshero, win=wins, loss=losses)
         else:
-            resp = 'For the current month, you have played {} games as {} against {}, with {} wins and {} losses'.format(total, ashero, vshero, wins, losses)
+            resp = render_template('as_against_msg', total=total, ashero=ashero, vshero=vshero, win=wins, loss=losses)
     elif (ashero is not None and asdeck is not None) or (vshero is not None and vsdeck is not None):
         if ashero is not None:
             as_deck = _find_deck_id(ashero, asdeck)
@@ -48,13 +48,13 @@ def status(ashero, asdeck, vshero, vsdeck):
         wins = stats['stats']['overall']['wins']
         losses = stats['stats']['overall']['losses']
         if ashero is not None and vshero is None:
-            resp = 'For the current month, you have played {} games as {} {}, with {} wins and {} losses'.format(total, asdeck, ashero, wins, losses)
+            resp = render_template('as_msg', total=total, ashero=asdeck+' '+ashero, win=wins, loss=losses)
         elif vshero is not None and ashero is None:
-            resp = 'For the current month, you have played {} games against {} {}, with {} wins and {} losses'.format(total, vsdeck, vshero, wins, losses)
+            resp = render_template('against_msg', total=total, vshero=vsdeck+' '+vshero, win=wins, loss=losses)
         else:
-            resp = 'For the current month, you have played {} games as {} {} against {} {}, with {} wins and {} losses'.format(total, asdeck, ashero, vsdeck, vshero, wins, losses)
+            resp = render_template('as_against_msg', total=total, ashero=asdeck+' '+ashero, vshero=vsdeck+' '+vshero, win=wins, loss=losses)
     else:
-        resp = 'Bad input. I received {} for as hero, {} for as deck, {} for vs hero, and {} for vs deck'.format(ashero, asdeck, vshero, vsdeck)
+        resp = render_template('error_msg', ashero=ashero, asdeck=asdeck, vshero=vshero, vsdeck=vsdeck)
     return statement(resp).simple_card('Trackobot', resp)
 
 
