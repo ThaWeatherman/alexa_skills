@@ -19,7 +19,7 @@ def _find_deck_id(hero, deck_name):
 
 
 @ask.intent('Stats')
-def status(ashero, asdeck, vshero, vsdeck):
+def stats(ashero, asdeck, vshero, vsdeck):
     resp = ''
     if ashero is None and asdeck is None and vshero is None and vsdeck is None:
         stats = t.stats(stats_type='classes', time_range='current_month')
