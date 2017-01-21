@@ -18,8 +18,27 @@ def _find_deck_id(hero, deck_name):
     return 0  # passing 0 for a deck id is fine. trackobot just ignores it
 
 
+def _fix_speech(ashero, vshero, asdeck, vsdeck):
+    mapping = {
+               'fish': 'murloc',
+               'shamen': 'shaman',
+               'aggressive': 'aggro'
+              }
+    if ashero in mapping:
+        ashero = mapping[ashero]
+    if vshero in mapping:
+        vshero = mapping[vshero]
+    if asdeck in mapping:
+        asdeck = mapping[asdeck]
+    if vsdeck in mapping:
+        vsdeck = mapping[vsdeck]
+    return ashero, vshero, asdeck, vsdeck
+
+
 @ask.intent('Stats')
 def stats(ashero, asdeck, vshero, vsdeck):
+    print('ashero={}\nasdeck={}\nvshero={}\nvsdeck={}'.format(ashero,asdeck,vshero,vsdeck))
+    ashero, vshero, asdeck, vsdeck = _fix_speech(ashero, vshero, asdeck, vsdeck)
     resp = ''
     if ashero is None and asdeck is None and vshero is None and vsdeck is None:
         stats = t.stats(stats_type='classes', time_range='current_month')
@@ -39,6 +58,8 @@ def stats(ashero, asdeck, vshero, vsdeck):
         else:
             resp = render_template('as_against_msg', total=total, ashero=ashero, vshero=vshero, win=wins, loss=losses)
     elif (ashero is not None and asdeck is not None) or (vshero is not None and vsdeck is not None):
+        as_deck = 0
+        vs_deck = 0
         if ashero is not None:
             as_deck = _find_deck_id(ashero, asdeck)
         if vshero is not None:
