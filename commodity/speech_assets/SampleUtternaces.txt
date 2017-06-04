@@ -4,3 +4,9 @@ CommodityPrice	give me the price of  {Commodity}
 CommodityPrice	the price of  {Commodity} 
 CommodityPrice	tell me the price of  {Commodity} 
 CommodityPrice	find me the price of  {Commodity} 
+AvailableCommodities  what are the available commodities
+AvailableCommodities  tell me the available commodities
+AvailableCommodities  give me the available commodities
+AvailableCommodities  what it supports
+AvailableCommodities  what i can get prices for
+AvailableCommodities  what commodities it supports
