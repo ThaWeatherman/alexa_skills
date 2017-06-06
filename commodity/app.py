@@ -1,12 +1,22 @@
 import datetime
 
 from flask import Flask, render_template
-from flask_ask import Ask, statement
+from flask_ask import Ask, statement, question
 import requests
 
 
 app = Flask(__name__)
 ask = Ask(app, '/')
+
+
+@ask.launch
+def launched():
+    return question('Welcome to Commodity Prices')
+
+
+@ask.session_ended
+def session_ended():
+    return "{}", 200
 
 
 @ask.intent('CommodityPrice', mapping={'commodity': 'Commodity'})
