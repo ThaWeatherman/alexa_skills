@@ -1,0 +1,106 @@
+ListChildrenIntent  list my children
+ListChildrenIntent  who are my children
+ListChildrenIntent  tell me my children
+ListChildrenIntent  list the kids
+AddChildIntent  add a child
+AddChildIntent  add a new child
+AddChildIntent  add child
+AddChildIntent  create a child
+AddChildIntent  create a new child
+AddChildIntent  add a child named {Name}
+AddChildIntent  create a new child named {Name}
+AddChildIntent  add new child with the name {Name}
+AddChildIntent  create a child with the name {Name}
+AddChildIntent  add {Name}
+DeleteChildIntent  remove a child
+DeleteChildIntent  delete a child
+DeleteChildIntent  delete the child named {Name}
+DeleteChildIntent  remove a child named {Name}
+DeleteChildIntent  remove the child named {Name}
+DeleteChildIntent  remove {Name}
+DeleteChildIntent  delete {Name}
+DeleteChildIntent  delete child
+DeleteChildIntent  remove child
+AddDiaperIntent  add a diaper
+AddDiaperIntent  add a new diaper
+AddDiaperIntent  add a diaper for {Name}
+AddDiaperIntent  add a {Kind} diaper for {Name}
+AddDiaperIntent  add a {Kind} diaper at {Time}
+AddDiaperIntent  add a {Kind} diaper for {Name} at {Time}
+AddDiaperIntent  add a diaper for {Name} at {Time}
+AddDiaperIntent  add a diaper for {Name} on {Date}
+AddDiaperIntent  add a diaper for {Name} {Date}
+AddDiaperIntent  add a diaper at {Time}
+AddDiaperIntent  add a diaper at {Time} on {Date}
+AddDiaperIntent  add a diaper at {Time} {Date}
+AddDiaperIntent  add a {Kind} diaper
+AddDiaperIntent  add a {Kind} diaper on {Date}
+AddDiaperIntent  add a {Kind} diaper {Date}
+AddDiaperIntent  add a {Kind} diaper for {Name} at {Time} on {Date}
+AddDiaperIntent  add a {Kind} diaper for {Name} at {Time} {Date}
+AddDiaperIntent  add a {Kind} diaper for {Name} on {Date}
+AddDiaperIntent  add a {Kind} diaper for {Name} {Date}
+AddFeedingIntent  add a feeding
+AddFeedingIntent  add a new feeding
+AddFeedingIntent  add a feeding for {Name}
+AddFeedingIntent  add a feeding on the {Side}
+AddFeedingIntent  add a feeding on the {Side} for {Name}
+AddFeedingIntent  add a feeding at {Time}
+AddFeedingIntent  add a feeding for {Name} at {Time}
+AddFeedingIntent  add a feeding at {Time} on {Date}
+AddFeedingIntent  add a feeding for {Name} on {Date}
+AddFeedingIntent  add a feeding at {Time} {Date}
+AddFeedingIntent  add a feeding for {Name} {Date}
+AddFeedingIntent  add a feeding on the {Side} at {Time}
+AddFeedingIntent  add a feeding on the {Side} on {Date}
+AddFeedingIntent  add a feeding on the {Side} {Date}
+AddFeedingIntent  add a feeding on the {Side} for {Name} at {Time}
+AddFeedingIntent  add a feeding on the {Side} for {Name} on {Date}
+AddFeedingIntent  add a feeding on the {Side} for {Name} {Date}
+AddFeedingIntent  add a feeding on the {Side} for {Name} at {Time} on {Date}
+AddFeedingIntent  add a feeding on the {Side} for {Name} at {Time} {Date}
+AddFeedingIntent  add a feeding for {Length} minutes
+AddFeedingIntent  add a feeding for {Length} minutes for {Name}
+AddFeedingIntent  add a feeding for {Name} for {Length} minutes
+AddFeedingIntent  add a feeding at {Time} for {Name} for {Length} minutes
+AddFeedingIntent  add a feeding on {Date} for {Name}
+AddFeedingIntent  add a feeding on {Date} for {Name} for {Length} minutes
+AddFeedingIntent  add a feeding for {Name} {Date} at {Time} for {Length} minutes on the {Side}
+AddFeedingIntent  add a feeding for {Name} on {Date} at {Time} for {Length} minutes on the {Side}
+AddFeedingIntent  add a feeding on the {Side} for {Length} minutes
+AddFeedingIntent  add a feeding for {Length} minutes on the {Side}
+AddFeedingIntent  add a feeding at {Time} for {Length} minutes
+AddFeedingIntent  add a feeding on the {Side} for {Name} on {Date} at {Time} for {Length} minutes
+AddFeedingIntent  add a feeding on the {Side} for {Name} {Date} at {Time} for {Length} minutes
+AddFeedingIntent  add a feeding at {Time} for {Length} minutes on the {Side} for {Name} on {Date}
+AddFeedingIntent  add a feeding at {Time} for {Length} minutes on the {Side} for {Name} {Date}
+AddFeedingIntent  add a feeding on {Date} for {Length} minutes for {Name} at {Time} on the {Side}
+AddFeedingIntent  add a feeding {Date} for {Length} minutes for {Name} at {Time} on the {Side}
+AddFeedingIntent  add a feeding for {Name} on the {Side} for {Length} minutes at {Time} {Date}
+AddFeedingIntent  add a feeding for {Name} on the {Side} for {Length} minutes at {Time} on {Date}
+AddFeedingIntent  add a feeding for {Name} for {Length} minutes at {Time} {Date} on the {Side}
+AddFeedingIntent  add a feeding for {Name} for {Length} minutes at {Time} on {Date} on the {Side}
+AddFeedingIntent  add a feeding for {Name} on the {Side} at {Time} {Date} for {Length} minutes
+AddFeedingIntent  add a feeding for {Name} on the {Side} at {Time} on {Date} for {Length} minutes
+GetRecentDiaperIntent  get the most recent diaper
+GetRecentDiaperIntent  retrieve the most recent diaper
+GetRecentDiaperIntent  fetch the most recent diaper
+GetRecentDiaperIntent  the most recent diaper
+GetRecentDiaperIntent  the latest diaper
+GetRecentDiaperIntent  get the latest diaper
+GetRecentDiaperIntent  grab the latest diaper
+GetRecentDiaperIntent  the last diaper
+GetRecentDiaperIntent  get the last diaper
+GetRecentDiaperIntent  give me the last diaper
+GetRecentDiaperIntent  give the latest diaper
+GetRecentFeedingIntent  get the most recent feeding
+GetRecentFeedingIntent  retrieve the most recent feeding
+GetRecentFeedingIntent  fetch the most recent feeding
+GetRecentFeedingIntent  the most recent feeding
+GetRecentFeedingIntent  the latest feeding
+GetRecentFeedingIntent  get the latest feeding
+GetRecentFeedingIntent  grab the latest feeding
+GetRecentFeedingIntent  the last feeding
+GetRecentFeedingIntent  get the last feeding
+GetRecentFeedingIntent  give me the last feeding
+GetRecentFeedingIntent  give the latest feeding

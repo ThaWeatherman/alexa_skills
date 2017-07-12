@@ -1,0 +1,10 @@
+failed_request: I was unable to successfully complete the request. Please try again later.
+child_name: What is the child's name?
+child_name_reprompt: I didn't get that. What is the child's name?
+kind: A diaper can be one of pee or poop. What kind was it?
+side: The side can be either left or right. What side was the feeding on?
+date: What day did it occur?
+time: What time did it occur?
+length: How many minutes was the feeding?
+help: You can add a child, diaper, or feeding. You can also get the most recent feeding or diaper for a child.
+multiple_name: You have multiple children with that name. Please use the Infant Tracker web interface to operate on the correct child.
